@@ -27,9 +27,11 @@
 
                 <!-- Modern TPW --> 
                 <section>
-                  <h2>Rates of True Polar Wander</h2>
-                  <h3>Ian Rose</h3>
-                  <h4>May 5, 2016</h4>
+                  <h3>Scaling rates of True Polar Wander</h3>
+                  <h4>Ian Rose</h4>
+                  <p>May 5, 2016</p>
+                  <!-- Define colors. This seems to stick for the whole document -->
+                  <h3> $\definecolor{green}{RGB}{141,211,199} \definecolor{yellow}{RGB}{255,255,179} \definecolor{purple}{RGB}{190,186,218} \definecolor{red}{RGB}{251,128,114} \definecolor{blue}{RGB}{128,177,211} \definecolor{orange}{RGB}{253,180,98}$ </h3>
                   <img class="stretch" data-src="images/escape_of_the_core.png"></img>
                 </section>
 
@@ -105,9 +107,20 @@
                   <h3 class="fragment"> $\Gamma = \alpha \Delta T = \frac{\mathrm{density \; variations}}{\mathrm{density}}$ </h3>
                 </section>
 
+                <section>
+                  <h3> Rate of true polar wander </h3>
+                  <h3> $ \dot{\Theta} = \frac{1}{{\color{red}\tau}} \frac{\color{blue}(\lambda_3-\lambda_1)}{\color{yellow}(C-A) } \sin(2 {\color{green}\theta})$ </h3>
+                   
+                  <p class="fragment" align="left">$\color{red}\tau$: viscous relaxation time</p>
+                  <p class="fragment" align="left">$\color{yellow}(C-A)$: Difference of polar and equatorial moments of inertia</p>
+                  <p class="fragment" align="left">$\color{blue}(\lambda_3-\lambda_1)$: Difference of principal convective moments</p>
+                  <p class="fragment" align="left">$\color{green}\theta$: Angle between the rotation axis and the principal convective axis</p>
+                </section>
+
+
                 <!-- Spectrum scaling -->
                 <section>
-                  <p> How does the power in degree-two modes scale with $\mathrm{Ra}$? </p>
+                  <p align="right"> $ \dot{\Theta} = \frac{1}{\tau} \frac{\color{blue}(\lambda_3-\lambda_1)}{(C-A) } \sin(2 {\theta})$ </p>
                   <div style="position:relative; width:800px; height:600px; margin:0 auto;">
                     <img width="800" height="800" src="images/spectrum_scaling_0.png" style="position:absolute;top:0;left:0;" />
                     <img class="fragment" width="800" height="600" src="images/spectrum_scaling_1.png" style="position:absolute;top:0;left:0;" />
@@ -117,10 +130,26 @@
                   </div>
                 </section>
 
+                <!-- Eigengap -->
 				<section>
+                  <p align="right"> $ \dot{\Theta} = \frac{1}{\tau} \frac{\color{blue}(\lambda_3-\lambda_1)}{(C-A) } \sin(2 {\theta})$ </p>
+                  <h3 align="left"> Scaling eigengap with Rayleigh number </h3>
+                  <img class="stretch" data-src="images/eigengap_negative.png"></img>
+                </section>
+
+                <!-- Davis Kahan -->
+				<section>
+                  <p align="right"> $ \dot{\Theta} = \frac{1}{\tau} \frac{\color{blue}(\lambda_3-\lambda_1)}{(C-A) } \sin(2 {\theta})$ </p>
                   <img class="stretch" data-src="images/perturb_negative.png"></img>
                   <h3>$\sin(2\theta) \le \frac{2 \delta}{\vert \lambda_2-\lambda_1 \vert}$</h3>
                   <p align="right">Davis and Kahan (1970)<p>
+                </section>
+
+                <!-- Misfit -->
+				<section>
+                  <h3> $ \dot{\Theta} = \frac{1}{\tau} \frac{(\lambda_3-\lambda_1)}{(C-A) } \sin(2 {\color{green} \theta})$ </h3>
+                  <p> Generation of large misfit angles </p>
+                  <img class="stretch" data-src="images/misfit_negative.png"></img>
                 </section>
 			</div>
 		</div>

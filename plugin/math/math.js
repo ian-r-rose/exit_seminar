@@ -18,6 +18,7 @@ var RevealMath = window.RevealMath || (function(){
 				inlineMath: [['$','$'],['\\(','\\)']] ,
 				skipTags: ['script','noscript','style','textarea','pre']
 			},
+            TeX: {extensions: ["color.js"]},
 			skipStartupTypeset: true
 		});
 
