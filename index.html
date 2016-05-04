@@ -24,8 +24,32 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
+
+                <!-- Modern TPW --> 
+                <section>
+                  <h2>Rates of True Polar Wander</h2>
+                  <h3>Ian Rose</h3>
+                  <h4>May 5, 2016</h4>
+                  <img class="stretch" data-src="images/escape_of_the_core.png"></img>
+                </section>
+
+                <!-- Modern TPW --> 
+                <section>
+                  <h3>Modern true polar wander</h3>
+                  <img class="stretch" data-src="images/modern_polar_wander_negative.png"></img>
+                  <p align="right">Chen et al, 2013</p>
+                </section>
+
+                <!-- Ancient TPW --> 
+                <section>
+                  <h3>Ancient true polar wander?</h3>
+                  <img class="stretch" data-src="images/evans_tpw_negative.png"></img>
+                  <p align="right">Evans, 2003</p>
+                </section>
+
                 <!-- Macrobius --> 
 				<section>
+                  <h3> Should Earth be stable? </h3>
                   <img class="stretch" data-src="images/macrobius.jpg"></img>
                   <p>Macrobius Ambrosius Theodosius (circa 400 C.E.)</p>
                 </section>
@@ -48,23 +72,49 @@
 
                 <!-- Goldreich and Toomre  --> 
                 <section>
-                <div style="position:relative; width:640px; height:560px; margin:0 auto;">
-                  <img width="640" height="560" src="images/beetle_negative.png" style="position:absolute;top:0;left:0;" />
-                  <img class="fragment" width="640" height="560" src="images/beetles_negative.png" style="position:absolute;top:0;left:0;" />
-                </div>
-                <p align="right">after Goldreich and Toomre (1969)</p>
+                  <p align="right">after Goldreich and Toomre (1969)</p>
+                  <div style="position:relative; width:640px; height:560px; margin:0 auto;">
+                    <img width="640" height="560" src="images/beetle_negative.png" style="position:absolute;top:0;left:0;" />
+                    <img class="fragment" width="640" height="560" src="images/beetles_negative.png" style="position:absolute;top:0;left:0;" />
+                  </div>
+                </section>
+
+                <!-- Motivation -->
+                <section>
+                  <h2> How does the rate of TPW scale with the physical parameters of a convecting planet? </h3> 
+                </section>
+                <section>
+                  <h2> How many beetles are there on Earth, and how big are they? </h3> 
+                  <img class="stretch" data-src="images/beetles_negative.png" ></img>
+                </section>
+
+                <!-- Governing equations -->
+                <section>
+                  <h2> Governing equations </h2>
+                  <h3 class="fragment"> $\underbrace{-\nabla P}_{\mathrm{pressure}} + \underbrace{\eta \nabla^2 \mathbf{u}}_{\mathrm{viscosity}} = \underbrace{\rho \mathbf{g}}_{\mathrm{gravity}} - \underbrace{\rho \Omega \times \Omega \times \mathbf{r}}_\mathrm{centrifugal}$</h3>
+                  <h3 class="fragment"> $\nabla \cdot \mathbf{u} = 0$</h3>
+                  <h3 class="fragment"> $\rho = \rho_0 ( 1 - \alpha (T - T_0) )$ </h3>
+                  <h3 class="fragment"> $\frac{\partial T}{\partial t} = -\mathbf{u} \cdot \nabla T + \kappa \nabla^2 T$ </h3>
+                </section>
+
+                <!-- Nondimensionalization -->
+                <section>
+                  <h2> Nondimensionalization </h2>
+                  <h3 class="fragment"> $\mathrm{Ra} = \frac{\rho_0 g \alpha \Delta T R^3}{\eta \kappa} = \frac{ \mathrm{buoyancy} }{\mathrm{diffusion}}$</h3>
+                  <h3 class="fragment"> $m = \frac{\Omega^2 R}{g} = \frac{\mathrm{centrifugal}}{\mathrm{gravity}}$</h3>
+                  <h3 class="fragment"> $\Gamma = \alpha \Delta T = \frac{\mathrm{density \; variations}}{\mathrm{density}}$ </h3>
                 </section>
 
                 <!-- Spectrum scaling -->
                 <section>
-                <p> How does the power in degree-two modes scale with $\mathrm{Ra}$? </p>
-                <div style="position:relative; width:800px; height:600px; margin:0 auto;">
-                  <img width="800" height="800" src="images/spectrum_scaling_0.png" style="position:absolute;top:0;left:0;" />
-                  <img class="fragment" width="800" height="600" src="images/spectrum_scaling_1.png" style="position:absolute;top:0;left:0;" />
-                  <img class="fragment" width="800" height="600" src="images/spectrum_scaling_2.png" style="position:absolute;top:0;left:0;" />
-                  <img class="fragment" width="800" height="600" src="images/spectrum_scaling_3.png" style="position:absolute;top:0;left:0;" />
-                  <img class="fragment" width="800" height="600" src="images/spectrum_scaling_4.png" style="position:absolute;top:0;left:0;" />
-                </div>
+                  <p> How does the power in degree-two modes scale with $\mathrm{Ra}$? </p>
+                  <div style="position:relative; width:800px; height:600px; margin:0 auto;">
+                    <img width="800" height="800" src="images/spectrum_scaling_0.png" style="position:absolute;top:0;left:0;" />
+                    <img class="fragment" width="800" height="600" src="images/spectrum_scaling_1.png" style="position:absolute;top:0;left:0;" />
+                    <img class="fragment" width="800" height="600" src="images/spectrum_scaling_2.png" style="position:absolute;top:0;left:0;" />
+                    <img class="fragment" width="800" height="600" src="images/spectrum_scaling_3.png" style="position:absolute;top:0;left:0;" />
+                    <img class="fragment" width="800" height="600" src="images/spectrum_scaling_4.png" style="position:absolute;top:0;left:0;" />
+                  </div>
                 </section>
 
 				<section>
