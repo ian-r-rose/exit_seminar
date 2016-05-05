@@ -14,7 +14,7 @@ def plot_thang( ax, cutoff, height ):
 
 ax.set_xlim(0., 20.)
 ax.set_ylim(0., 1.)
-ax.set_xlabel('Wavenumber')
+ax.set_xlabel('Wavenumber $k$')
 ax.set_ylabel('Power')
 
 ax.axvline( x = 2, ymin=0, ymax=1, color='r', alpha=0.8,  lw=10)
